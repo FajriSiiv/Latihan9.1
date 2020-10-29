@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan9</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../FontA/css/all.css">
+</head>
+<body>
+    <header>
+        <div class="rightnav">
+            <li>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Feature</a>
+                <a href="#">Contact</a>
+            </li>
+        </div>
+        <div class="bar">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+        </div>
+    </header>
+    <div class="jumbotron">
+        <div class="text">
+            <h1>Make it Easy<span>.</span></h1>
+            <p>Create ur website for free</p>
+            <h3>Just 4 Fun</h3>
+        </div>
+    </div>
+    <script>
+        const menu = document.querySelector('.rightnav');
+        const bar = document.querySelector('.bar');
+        const closebtn = document.querySelector('.closebtn');
+
+        bar.addEventListener('click',function(){
+            menu.classList.toggle('slide');
+        })
+    </script>
+</body>
+</html>
